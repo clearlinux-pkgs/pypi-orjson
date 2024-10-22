@@ -6,10 +6,10 @@
 # autospec commit: f35655a
 #
 Name     : pypi-orjson
-Version  : 3.10.9
-Release  : 11
-URL      : https://files.pythonhosted.org/packages/ae/9f/645b533f73bd49adaa4cab46921276c8ad8b3aff44959f2e717ac7533e92/orjson-3.10.9.tar.gz
-Source0  : https://files.pythonhosted.org/packages/ae/9f/645b533f73bd49adaa4cab46921276c8ad8b3aff44959f2e717ac7533e92/orjson-3.10.9.tar.gz
+Version  : 3.10.10
+Release  : 12
+URL      : https://files.pythonhosted.org/packages/80/44/d36e86b33fc84f224b5f2cdf525adf3b8f9f475753e721c402b1ddef731e/orjson-3.10.10.tar.gz
+Source0  : https://files.pythonhosted.org/packages/80/44/d36e86b33fc84f224b5f2cdf525adf3b8f9f475753e721c402b1ddef731e/orjson-3.10.10.tar.gz
 Summary  : Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy
 Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause BSL-1.0 MIT Unicode-DFS-2016 Unlicense
@@ -62,15 +62,15 @@ python3 components for the pypi-orjson package.
 
 
 %prep
-%setup -q -n orjson-3.10.9
-cd %{_builddir}/orjson-3.10.9
+%setup -q -n orjson-3.10.10
+cd %{_builddir}/orjson-3.10.10
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1729444428
+export SOURCE_DATE_EPOCH=1729636575
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -149,12 +149,12 @@ cp %{_builddir}/orjson-%{version}/include/cargo/rustversion-1.0.18/LICENSE-APACH
 cp %{_builddir}/orjson-%{version}/include/cargo/rustversion-1.0.18/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/ce3a2603094e799f42ce99c40941544dfcc5c4a5 || :
 cp %{_builddir}/orjson-%{version}/include/cargo/ryu-1.0.18/LICENSE-APACHE %{buildroot}/usr/share/package-licenses/pypi-orjson/6e5c4711bcae04967d7f5b5e01cf56ae03bebe7a || :
 cp %{_builddir}/orjson-%{version}/include/cargo/ryu-1.0.18/LICENSE-BOOST %{buildroot}/usr/share/package-licenses/pypi-orjson/3cba29011be2b9d59f6204d6fa0a386b1b2dbd90 || :
-cp %{_builddir}/orjson-%{version}/include/cargo/serde-1.0.210/LICENSE-APACHE %{buildroot}/usr/share/package-licenses/pypi-orjson/6e5c4711bcae04967d7f5b5e01cf56ae03bebe7a || :
-cp %{_builddir}/orjson-%{version}/include/cargo/serde-1.0.210/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/ce3a2603094e799f42ce99c40941544dfcc5c4a5 || :
-cp %{_builddir}/orjson-%{version}/include/cargo/serde_derive-1.0.210/LICENSE-APACHE %{buildroot}/usr/share/package-licenses/pypi-orjson/6e5c4711bcae04967d7f5b5e01cf56ae03bebe7a || :
-cp %{_builddir}/orjson-%{version}/include/cargo/serde_derive-1.0.210/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/ce3a2603094e799f42ce99c40941544dfcc5c4a5 || :
-cp %{_builddir}/orjson-%{version}/include/cargo/serde_json-1.0.131/LICENSE-APACHE %{buildroot}/usr/share/package-licenses/pypi-orjson/6e5c4711bcae04967d7f5b5e01cf56ae03bebe7a || :
-cp %{_builddir}/orjson-%{version}/include/cargo/serde_json-1.0.131/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/ce3a2603094e799f42ce99c40941544dfcc5c4a5 || :
+cp %{_builddir}/orjson-%{version}/include/cargo/serde-1.0.211/LICENSE-APACHE %{buildroot}/usr/share/package-licenses/pypi-orjson/6e5c4711bcae04967d7f5b5e01cf56ae03bebe7a || :
+cp %{_builddir}/orjson-%{version}/include/cargo/serde-1.0.211/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/ce3a2603094e799f42ce99c40941544dfcc5c4a5 || :
+cp %{_builddir}/orjson-%{version}/include/cargo/serde_derive-1.0.211/LICENSE-APACHE %{buildroot}/usr/share/package-licenses/pypi-orjson/6e5c4711bcae04967d7f5b5e01cf56ae03bebe7a || :
+cp %{_builddir}/orjson-%{version}/include/cargo/serde_derive-1.0.211/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/ce3a2603094e799f42ce99c40941544dfcc5c4a5 || :
+cp %{_builddir}/orjson-%{version}/include/cargo/serde_json-1.0.132/LICENSE-APACHE %{buildroot}/usr/share/package-licenses/pypi-orjson/6e5c4711bcae04967d7f5b5e01cf56ae03bebe7a || :
+cp %{_builddir}/orjson-%{version}/include/cargo/serde_json-1.0.132/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/ce3a2603094e799f42ce99c40941544dfcc5c4a5 || :
 cp %{_builddir}/orjson-%{version}/include/cargo/shlex-1.3.0/LICENSE-APACHE %{buildroot}/usr/share/package-licenses/pypi-orjson/a97a2888bca904918b3b9ec008fde1d6e9905a6d || :
 cp %{_builddir}/orjson-%{version}/include/cargo/shlex-1.3.0/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/64e8197cb5ae680fcf996cc0ac8760e9f1e2e3a6 || :
 cp %{_builddir}/orjson-%{version}/include/cargo/simdutf8-0.1.5/LICENSE-Apache %{buildroot}/usr/share/package-licenses/pypi-orjson/736872921ab5596e857b333eb7854a53212dbab1 || :
@@ -163,8 +163,8 @@ cp %{_builddir}/orjson-%{version}/include/cargo/smallvec-1.13.2/LICENSE-APACHE %
 cp %{_builddir}/orjson-%{version}/include/cargo/smallvec-1.13.2/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/c61640f6c218caf86d1b8072e09668a8362dba04 || :
 cp %{_builddir}/orjson-%{version}/include/cargo/static_assertions-1.1.0/LICENSE-APACHE %{buildroot}/usr/share/package-licenses/pypi-orjson/2b8b815229aa8a61e483fb4ba0588b8b6c491890 || :
 cp %{_builddir}/orjson-%{version}/include/cargo/static_assertions-1.1.0/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/972723ef8f594b1c7515e4c227ff9d5912041fac || :
-cp %{_builddir}/orjson-%{version}/include/cargo/syn-2.0.79/LICENSE-APACHE %{buildroot}/usr/share/package-licenses/pypi-orjson/6e5c4711bcae04967d7f5b5e01cf56ae03bebe7a || :
-cp %{_builddir}/orjson-%{version}/include/cargo/syn-2.0.79/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/ce3a2603094e799f42ce99c40941544dfcc5c4a5 || :
+cp %{_builddir}/orjson-%{version}/include/cargo/syn-2.0.82/LICENSE-APACHE %{buildroot}/usr/share/package-licenses/pypi-orjson/6e5c4711bcae04967d7f5b5e01cf56ae03bebe7a || :
+cp %{_builddir}/orjson-%{version}/include/cargo/syn-2.0.82/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/ce3a2603094e799f42ce99c40941544dfcc5c4a5 || :
 cp %{_builddir}/orjson-%{version}/include/cargo/target-lexicon-0.12.16/LICENSE %{buildroot}/usr/share/package-licenses/pypi-orjson/f137043e018f2024e0414a9153ea728c203ae8e5 || :
 cp %{_builddir}/orjson-%{version}/include/cargo/unicode-ident-1.0.13/LICENSE-APACHE %{buildroot}/usr/share/package-licenses/pypi-orjson/6e5c4711bcae04967d7f5b5e01cf56ae03bebe7a || :
 cp %{_builddir}/orjson-%{version}/include/cargo/unicode-ident-1.0.13/LICENSE-MIT %{buildroot}/usr/share/package-licenses/pypi-orjson/ce3a2603094e799f42ce99c40941544dfcc5c4a5 || :
