@@ -7,7 +7,7 @@
 #
 Name     : pypi-orjson
 Version  : 3.10.10
-Release  : 12
+Release  : 13
 URL      : https://files.pythonhosted.org/packages/80/44/d36e86b33fc84f224b5f2cdf525adf3b8f9f475753e721c402b1ddef731e/orjson-3.10.10.tar.gz
 Source0  : https://files.pythonhosted.org/packages/80/44/d36e86b33fc84f224b5f2cdf525adf3b8f9f475753e721c402b1ddef731e/orjson-3.10.10.tar.gz
 Summary  : Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy
