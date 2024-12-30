@@ -6,10 +6,10 @@
 # autospec commit: 5424026
 #
 Name     : pypi-orjson
-Version  : 3.10.12
-Release  : 15
-URL      : https://files.pythonhosted.org/packages/e0/04/bb9f72987e7f62fb591d6c880c0caaa16238e4e530cbc3bdc84a7372d75f/orjson-3.10.12.tar.gz
-Source0  : https://files.pythonhosted.org/packages/e0/04/bb9f72987e7f62fb591d6c880c0caaa16238e4e530cbc3bdc84a7372d75f/orjson-3.10.12.tar.gz
+Version  : 3.10.13
+Release  : 16
+URL      : https://files.pythonhosted.org/packages/45/0b/8c7eaf1e2152f1e0fb28ae7b22e2b35a6b1992953a1ebe0371ba4d41d3ad/orjson-3.10.13.tar.gz
+Source0  : https://files.pythonhosted.org/packages/45/0b/8c7eaf1e2152f1e0fb28ae7b22e2b35a6b1992953a1ebe0371ba4d41d3ad/orjson-3.10.13.tar.gz
 Summary  : Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy
 Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause BSL-1.0 MIT Unlicense
@@ -62,15 +62,15 @@ python3 components for the pypi-orjson package.
 
 
 %prep
-%setup -q -n orjson-3.10.12
-cd %{_builddir}/orjson-3.10.12
+%setup -q -n orjson-3.10.13
+cd %{_builddir}/orjson-3.10.13
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1732467900
+export SOURCE_DATE_EPOCH=1735573576
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
