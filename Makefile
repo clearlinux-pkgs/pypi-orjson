@@ -1,5 +1,5 @@
 PKG_NAME := pypi-orjson
-URL = https://files.pythonhosted.org/packages/92/f7/3219b56f47b4f5e864fb11cdf4ac0aaa3de608730ad2dc4c6e16382f35ec/orjson-3.10.14.tar.gz
+URL = https://files.pythonhosted.org/packages/ae/f9/5dea21763eeff8c1590076918a446ea3d6140743e0e36f58f369928ed0f4/orjson-3.10.15.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
